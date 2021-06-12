@@ -5,6 +5,7 @@ from database import database
 
 #imports the login view
 from apps.login.views import login_blueprint
+from apps.map.views import map_blueprint
 
 def create_app():
     #Creates an Flask application
@@ -17,6 +18,8 @@ def create_app():
 
     #registers the login blueprint
     app.register_blueprint(login_blueprint, url_prefix='/login')
+    app.register_blueprint(map_blueprint, url_prefix='/map')
+
 
     return app
 
