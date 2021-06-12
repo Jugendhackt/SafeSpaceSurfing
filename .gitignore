@@ -1,7 +1,9 @@
 app/env/
 **/__pycache__
+app/app_data.db
 
 /node_modules/
 /public/build/
+
 
 .DS_Store
