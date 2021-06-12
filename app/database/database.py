@@ -1,6 +1,8 @@
 from flask_sqlalchemy import SQLAlchemy
 from .models import db, Facility
+from .DB_Install import push_data_to_database
 import json
+
 
 def init_app(app):
 
@@ -12,17 +14,12 @@ def init_app(app):
 
     #parses data from the default_facilities file and 
     #adds the information into the database
-    parse_and_pull_data(app)
+    #parse_and_pull_data(app)
 
 def parse_and_pull_data(app):
-    with app.app_context():
-        jsonFile = open("database/default_facilities.json", "rt")
-        json_data = json.load(jsonFile)
-        for item in json_data["Facilities"]:
-            facility = Facility(item)
-            db.session.add(facility)
-        db.session.commit()
-        print(str(len(json_data['Facilities'])) + " facilities added to the database")
+   push_data_to_database(app)
+
+
 
 
 

@@ -1,0 +1,62 @@
+{
+    "node/2443427813": {
+        "6": "relation/62578",
+        "5": "relation/72022",
+        "10": "relation/2613782",
+        "9": "relation/2613804"
+    },
+    "node/1962552448": {
+        "6": "relation/62578",
+        "5": "relation/72022",
+        "10": "relation/2613759",
+        "9": "relation/2613802"
+    },
+    "node/1023190054": {
+        "6": "relation/62578",
+        "5": "relation/72022",
+        "10": "relation/2613745",
+        "9": "relation/2613800"
+    },
+    "node/352702446": {
+        "6": "relation/62578",
+        "5": "relation/72022",
+        "10": "relation/2613711",
+        "9": "relation/2613798"
+    },
+    "way/316561836": {
+        "6": "relation/62578",
+        "5": "relation/72022",
+        "10": "relation/2613765",
+        "9": "relation/2613803"
+    },
+    "way/297000958": {
+        "6": "relation/62578",
+        "5": "relation/72022",
+        "10": "relation/2613738",
+        "9": "relation/2613796"
+    },
+    "way/258538603": {
+        "6": "relation/62578",
+        "5": "relation/72022",
+        "10": "relation/2613750",
+        "9": "relation/2613801"
+    },
+    "way/243703382": {
+        "6": "relation/62578",
+        "5": "relation/72022",
+        "10": "relation/2613726",
+        "9": "relation/2613797"
+    },
+    "way/240776514": {
+        "6": "relation/62578",
+        "5": "relation/72022",
+        "10": "relation/2613731",
+        "9": "relation/2613804"
+    },
+    "way/32699452": {
+        "6": "relation/62578",
+        "5": "relation/72022",
+        "10": "relation/2613711",
+        "9": "relation/2613798"
+    }
+}
