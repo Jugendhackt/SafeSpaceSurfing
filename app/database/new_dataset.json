@@ -1,0 +1,89 @@
+{
+    "node/2443427813": {
+        "name": "Neukirchener Erziehungsverein",
+        "relations": {
+            "6": "relation/62578",
+            "5": "relation/72022",
+            "10": "relation/2613782",
+            "9": "relation/2613804"
+        }
+    },
+    "node/1962552448": {
+        "name": "Caritas Zentralstation M\u00fclheim",
+        "relations": {
+            "6": "relation/62578",
+            "5": "relation/72022",
+            "10": "relation/2613759",
+            "9": "relation/2613802"
+        }
+    },
+    "node/1023190054": {
+        "name": "SKM K\u00f6ln Sozialdienst Katholischer M\u00e4nner e.V.",
+        "relations": {
+            "6": "relation/62578",
+            "5": "relation/72022",
+            "10": "relation/2613745",
+            "9": "relation/2613800"
+        }
+    },
+    "node/352702446": {
+        "name": "Gulliver",
+        "relations": {
+            "6": "relation/62578",
+            "5": "relation/72022",
+            "10": "relation/2613711",
+            "9": "relation/2613798"
+        }
+    },
+    "way/316561836": {
+        "relations": {
+            "6": "relation/62578",
+            "5": "relation/72022",
+            "10": "relation/2613765",
+            "9": "relation/2613803"
+        }
+    },
+    "way/297000958": {
+        "relations": {
+            "6": "relation/62578",
+            "5": "relation/72022",
+            "10": "relation/2613738",
+            "9": "relation/2613796"
+        }
+    },
+    "way/258538603": {
+        "name": "Kita Stadt K\u00f6ln",
+        "relations": {
+            "6": "relation/62578",
+            "5": "relation/72022",
+            "10": "relation/2613750",
+            "9": "relation/2613801"
+        }
+    },
+    "way/243703382": {
+        "relations": {
+            "6": "relation/62578",
+            "5": "relation/72022",
+            "10": "relation/2613726",
+            "9": "relation/2613797"
+        }
+    },
+    "way/240776514": {
+        "name": "Familienzentrum Finkenberg",
+        "relations": {
+            "6": "relation/62578",
+            "5": "relation/72022",
+            "10": "relation/2613731",
+            "9": "relation/2613804"
+        }
+    },
+    "way/32699452": {
+        "name": "St. Vincenz-Haus",
+        "relations": {
+            "6": "relation/62578",
+            "5": "relation/72022",
+            "10": "relation/2613711",
+            "9": "relation/2613798"
+        }
+    }
+}

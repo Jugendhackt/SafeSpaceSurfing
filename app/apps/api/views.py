@@ -1,6 +1,5 @@
 from flask_restful import Resource, abort, marshal_with, fields
 from database.database import db, Facility
-import json
 
 facility_resource_fields = {
     'f_id':fields.Integer,

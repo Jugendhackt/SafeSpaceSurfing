@@ -14,7 +14,7 @@ def init_app(app):
 
     #parses data from the default_facilities file and 
     #adds the information into the database
-    #parse_and_pull_data(app)
+    parse_and_pull_data(app)
 
 def parse_and_pull_data(app):
    push_data_to_database(app)
