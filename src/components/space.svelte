@@ -2,11 +2,8 @@
 import L,{La} from "leaflet";
 import { getContext } from "svelte";
 
-let mymap = getContext("leafletMapInstance");
-const ids = ["node/1726779295","way/35004878","way/246625456","way/25270980","node/2443427813",
-    "node/1962552448",
-    "node/1023190054",
-    "node/352702446"]
+let mymap = getContext("leafletMapInstance")
+
 let rawjson = {
     "type": "FeatureCollection",
     "features": []
@@ -15,8 +12,19 @@ L.Icon.Default.prototype.options.imagePath = "/static/icons/"
 L.Icon.Default.prototype.options.iconUrl = "marker-icon.png"
 L.Icon.Default.prototype.options.shadowUrl = "marker-shadow.png"
 
-ids.forEach(async (id)=>{
-    const osmId = id.split("/")
+/*
+mymap.on('zoom',()=>{
+    console.log(mymap.getZoom()); 
+})
+*/
+var admin_level = 6
+var rel_id = 62578
+
+fetch(`http://127.0.0.1:5000/api/v1/facilities/${admin_level}/relation/${rel_id}`)
+.then(data => data.json())
+.then(data => {
+    data.forEach(async (space)=>{
+    const osmId = space["osm_id"].split("/")
     fetch(`https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];${osmId[0]}(${osmId[1]});out%20geom;`)
     .then(data => data.json())
     .then(data => data["elements"][0])
@@ -41,7 +49,6 @@ ids.forEach(async (id)=>{
                     console.log(coords);
                     var out_geo = {
                         "type": "Feature",
-                        //"bbox": data["bounds"].map(makeCoordsToPoint),
                         "properties": data["tags"],
                         "geometry": {
                             "type": "Polygon",
@@ -58,9 +65,7 @@ ids.forEach(async (id)=>{
         rawjson["features"].push(out_geo)
     }) 
 })
-
-
-//L.marker([47.439278,9.529174]).addTo(mymap).bindPopup("Willkommen in Heiden!").openPopup();
+})
 
 var geojsonFeature = {
     "type": "Feature",
